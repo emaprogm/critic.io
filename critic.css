@@ -1,0 +1,1112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'caviar Dreams';
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* en communs */
+
+header, main, div.illusationmenup, div.toggle, h1.titreSection, 
+section.CMN, section.team, section.partenaire, section.laisserUnSMS,
+footer.piedDePage,
+section.positionementEtProjetWeb,
+
+/* articles pages */
+div.listesAutresArticles
+{
+    width: 380px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    padding: 15px 0;
+    position: relative;
+}
+header img.logo{
+    width: 70px;
+    height: 20px;
+}
+form{
+    display: flex;
+    justify-content: end;
+}
+input, label{   
+    background-color:#F8F4F4;
+    padding: 5px;
+}
+input{
+    width: 60%;
+    border: none;
+    outline: none;
+}
+label a.searchlink i{
+    color: rgba(0, 0, 0, .2);
+}
+label a.searchlink i:hover{
+    color: rgba(0, 0, 0, .6);
+}
+
+/* code toggle hambuger */
+div.toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px 10px 10px 10px;
+    position: relative;
+    
+}
+div.toggle a i{
+    color: rgba(0, 0, 0, .2);
+    transition: color 0.3s;
+}
+div.toggle:hover .menuNavigation{
+    visibility: visible;
+}
+div.toggle a i:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+    /* liste déroulante */
+    .menuNavigation{
+        background-color: #FF6347;
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        visibility: hidden;
+        transition: visibility 0.3s;
+    }
+    .menuNavigation .menu{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .menuNavigation .menu ul li{
+        list-style-type: none;
+    }
+    .menuNavigation .menu ul li:hover{
+        background-color: #ca452d;
+    }
+    /* .menuNavigation .menu ul li:focus{
+        background-color: #ca452d;
+    } */
+    .menuNavigation .menu ul li a i{
+        color: #fff;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+/* fin */
+
+/*  */
+div.illusationmenup{
+    background-image: url('images/imagemenup.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 546px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1.accrochemenup{
+    color: #fff;
+    animation: accroche  0.5s ease-in-out;
+    animation-delay: 5s;
+}
+@keyframes accroche {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+/*  */
+
+/*  */
+a.boitelinkArticle:hover .illustrationart{
+    filter: grayscale(0);
+}
+div.illustrationart{
+    background-image: url('images/illustrationsarticles/ia.png');
+    width: 100%;
+    height: 200px;
+    filter: grayscale(20);
+}
+a.boitelinkArticle{
+    color: black;
+}
+.boiteArtileResum{
+    margin: 20px 0;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .2);
+}
+h1.titreSection{
+    padding: 15px 0 0;
+    opacity: .4;
+    text-align: center;
+}
+
+.listeArticle{
+    padding: 6px;
+}
+/*  */
+.titreDatepost{
+    /* padding: 10px 0; */
+    /* margin-top: 10px; */
+}
+h2{
+    font-size: 1.2em;
+    color:#656565;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    color: #707070;
+    padding: 0 10px 10px 10px;
+    font-size: 1em;
+}
+main{
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
+/* Pagniation */
+
+.pagination-boite{
+    padding: 10px;
+}
+.boitelink{
+    display: flex;
+    justify-content: space-between ;
+}
+.boitelink li {
+    list-style-type: none;
+}
+.boitelink li a{
+    text-decoration: none;
+    color: #656565;
+    font-size: 16px;
+}
+.boitelink li a:focus{
+    color: #FF6347;
+}
+
+/* Section Communication Marketing et qui sommes nous ? */
+
+section.CMN,
+section.team{
+    margin-bottom: 30px;
+}
+div.img,
+div.img2,
+div.img3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(40);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s;
+}
+div.img{
+    background-image: url('images/illustrationsarticles/communication.png');
+}
+div.img2{
+    background-image: url('images/illustrationsarticles/marketing.png');
+}
+div.img3{
+    background-image: url('images/illustrationsarticles/qsn.png');
+}
+
+div.img:hover,
+div.img2:hover,
+div.img3:hover{
+    filter: grayscale(0);
+}
+h2.title{
+    background-color: #FF6347;
+    color: white;
+    position: relative;
+    z-index: 20;
+}
+.boite-communication,
+.boite-marketing,
+.boite-QSN{
+    background-color: #FF6347;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+p.description{
+    color: #F8F4F4;
+    padding: 0 19px;
+}
+
+/*  */
+
+.carte-lireplus span{
+    display: block;
+    padding: 10px 40px 10px 180px ;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+ .carte-lireplus span::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    /* width: 35%; */
+    height: 25px;
+    right: 20px;
+    left: 160px;
+    z-index: -1;
+} 
+
+/*  */
+section.team{
+    margin-top: 30px;
+    background-color: #665F55;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px ;
+}
+section.team::before{
+    content: '';
+    position: absolute;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    height: 40px;
+    top: 50%;
+    z-index: 1;
+    background-color: #403E33;
+}
+h2.team-title{
+    color: #fff;
+    text-align: center;
+}
+.conteneurMembre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.pictureMemberTeam-card{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 10px 0;
+    width: 50%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pictureMemberTeam{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 110px;
+    height: 140px;
+}
+.member1{
+    background-image: url('images/illustrationsarticles/member1.png');
+}
+.member2{
+    background-image: url('images/illustrationsarticles/member2.jpg');
+}
+.member3{
+    background-image: url('images/illustrationsarticles/member3.jpg');
+}
+h5{
+    font-size: 13px;
+}
+h6{
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+}
+
+/* boutons silde des member team */
+.conteneurBoiteBoutonSlide,
+.boiteBoutonSlide{
+    display: flex;
+    align-items: center;
+
+}
+.conteneurBoiteBoutonSlide{
+    height: 60px;
+    justify-content: center;
+}
+.boiteBoutonSlide{
+    /* background-color: antiquewhite; */
+    width: 50%;
+    height: 30px;
+    justify-content: space-evenly;
+}
+.boutonSilde{
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 9px;
+}
+.boutonSilde:focus{
+    background-color: #FF6347;
+}
+
+
+/* Partenaire  et sms*/
+
+section.partenaire, 
+section.laisserUnSMS,
+.formulaireenvoiSMS{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, .2);
+    /* border-top: 2px solid rgba(0, 0, 0, .2); */
+    /* border-bottom: 2px solid rgba(0, 0, 0, .2); */
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+h2.titrepartenaire,
+h2.titreSMS{
+    text-align: center;
+}
+div.boiteLogoPartenaire,
+.message{
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, .2);
+    padding: 10px;
+    overflow: hidden;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img.logo1,
+img.logo4{
+    width: 50px;
+    display: block;
+    padding: 5px;
+}
+
+img.logo4{
+    width: 200px;
+}
+
+/* Laissez un message */
+section.laisserUnSMS{
+    padding-bottom: 0;
+    margin-bottom: 40px;
+}
+.formulaireenvoiSMS{
+    border: none;
+    padding: 0px;
+}
+.email,
+.message,
+.envoi{
+    width: 100%;
+    font-size: 13px;
+}
+
+.email{
+    align-self: center;
+}
+.message{
+    margin: 10px;
+    resize: none;
+    outline: none;
+}
+.envoi{
+    margin-top: 10px;
+    width: 200px;
+    align-self: center;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+
+
+/* Debut pieds de page */
+footer.piedDePage{
+    margin-top: 100px;
+    padding: 0;
+}
+    /* section principale : c'est le carré du bas */
+.garderLeLienAvecCritic{
+    position: relative;
+    background-color: #282828;
+    color: #665F55;
+    border: 2px solid #403E33;
+    height: 1420px;
+}
+    /* C'est le carré du haut */
+.LiensAvecCritic{
+    background-color: #282828;
+    padding: 10px;
+    width: 90%;
+    margin: 15px auto;
+    border: 2px solid #403E33;
+    transform: translateY(-50px);
+}
+
+/* boite des listes */
+.boite-listeArticles .speci{
+    width: 60%;
+    height: 150px;
+    padding-top: 20px;
+}
+/* rsn */
+.listeArticles a i{
+    color: #403E33;
+    font-size: 30px;
+}
+    a i.fa-facebook{
+        font-size: 60px;
+    }
+    a i.fa-instagram-square{
+        font-size: 50px;
+    }
+    a i.fa-fa-twitch{
+        font-size: 35px;
+    }
+    a i.fa-twitter{
+        font-size: 40px;
+    }
+    a i.fa-youtube{
+        font-size: 65px;
+    }
+    a i.fa-reddit{
+        font-size: 25px;
+    }
+    
+
+/*  */
+.listeArticles{
+    width: 90%;
+    margin: 0 auto;
+    /* font-size: 2em; */
+}
+.listeArticles ul{
+    list-style-type: square;
+}
+.listeArticles ul li a{
+    color: #403E33;
+}
+.listeArticles ul li a:focus{
+    color: rgb(243, 141, 218);
+}
+
+
+/* Derniere section positionnement et projets web */
+
+section.positionementEtProjetWeb{
+    margin-top: 60px;
+    padding: 0;
+}
+div.positionnement{
+    padding: 10px;
+    margin-top: 90px;
+    background-color: #000;
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid #403E33;
+    /* margin-bottom: 10px; */
+    
+}
+img.logopositionement{
+    width: 25%;
+    margin: 20px auto;
+}
+
+p.position{
+    text-align: center;
+    font-size: .8em;
+    color: #403E33;
+}
+
+/* Langue */
+.boite-langueDuSite{
+    display: flex;
+    justify-content: center;
+}
+.boite-langueDuSite select{
+    border:2px solid #403E33;
+    background-color: #000;
+    color: #403E33;
+}
+/* Projet web */
+
+.boite-projetWeb{
+    background-color: #FF6347;
+    color: #fff;
+}
+h2.TitreProjetWeb{
+    color: #fff;
+    text-align: center;
+}
+/* listes des projets */
+.boiteProjet{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.boiteProjet a{
+    color: #fff;
+    transition: font-weight 0.4s;
+    /* display: block;
+    width: 100%; */
+}
+.boiteProjet a:focus{
+    font-weight: 700;
+}
+
+/* Juridique */
+
+.boiteJuridique{
+    font-size: .6em;
+    justify-content: center;
+    background-color: #282828;
+    display: flex;
+    color: #53524a;
+}
+
+ 
+@media only screen and (min-width:469px) {
+    header,
+    main, div.illusationmenup, div.toggle, h1.titreSection, 
+    section.CMN, section.team, section.partenaire, section.laisserUnSMS,
+    footer.piedDePage,
+    section.positionementEtProjetWeb,
+    
+    /* Debut Page Artcles */
+    section.coneteneurToutArticle,
+    div.sources,
+    div.listesAutresArticles{
+        /* width: 669px; */
+        margin: 0 auto;
+        width: 98%;
+    }
+    header{
+        padding: 20px 0px;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 20;
+    }
+    header img.logo{
+        width: 100px;
+        height: 30px;
+    }
+    input{
+        width: 70%;
+        border-bottom: 3px solid rgba(0, 0, 0, .6) ;
+        /* padding-left: 20px; */
+    }
+    label{
+        border-bottom: 3px solid rgba(0, 0, 0, .6) ;
+        /* padding-right: 20px; */
+    }
+
+    /*  */
+    div.illustrationart{
+        background-image: url('images/illustrationsarticles/ia.png');
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
+    a.boitelinkArticle{
+        color: black;
+    }
+    .boiteArtileResum{
+        margin: 20px 0;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, .2);
+    }
+    h1.titreSection{
+        padding: 15px 0 0;
+        opacity: .4;
+        text-align: center;
+    }
+    
+    .listeArticle{
+        padding: 6px;
+    }
+    /*  */
+    .titreDatepost{
+        /* padding: 10px 0; */
+        /* margin-top: 10px; */
+    }
+    h2{
+        font-size: 1.2em;
+        color:#656565;
+        padding: 10px;
+    }
+    p{
+        text-align: justify;
+        color: #707070;
+        padding: 0 10px 10px 10px;
+        font-size: 1em;
+    }
+    /*  */
+    section.garderLeLienAvecCritic{
+        margin-top: 80px;
+    }
+
+}
+
+/*  */
+@media only screen and (min-width:663px){
+    .boiteArtileResum{
+        display: flex;
+    }
+    div.illustrationart{
+        height: auto;
+        background-position: center;
+    }
+    .boite-communication,
+    .boite-marketing,
+    .boite-QSN{
+        display: flex;
+        margin: 15px 0;
+        padding-bottom: 0;
+    }
+
+    /*  */
+    div.img,
+    div.img2,
+    div.img3{
+        background-size: cover;
+        width: 100%;
+    }
+
+    .conteneurMembre{
+        flex-direction: row;
+        width: 600px;
+        margin: 0px auto;
+        padding-bottom: 40px;
+        top: 40px;
+        justify-content: space-evenly;
+    }
+    div.pictureMemberTeam-card{
+        margin: 0 15px;
+        width: 200px;
+        height: 300px; 
+    }
+
+    /* Partenaire */
+    section.partenaire{
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, .2);
+    }
+    div.boiteLogoPartenaire{
+        width: 100%;
+        border: none;
+    }
+    img.logo1{
+        width: 100px;
+        margin: 0 40px;
+        filter: grayscale(30);
+        cursor: pointer;
+        transition: filter 0.3s;
+    }
+    img.logo1:hover{
+        filter: grayscale(0);
+    }
+}
+
+/*  */
+@media only screen and (min-width:929px){
+    
+    header,
+    main, div.illusationmenup, div.toggle, h1.titreSection, 
+    section.CMN, section.team, section.partenaire, section.laisserUnSMS,
+    footer.piedDePage,
+    section.positionementEtProjetWeb,
+
+    /* Debut Page Artcles */
+    section.coneteneurToutArticle,
+    div.sources,
+    div.listesAutresArticles{
+        margin: 0 auto;
+    }
+
+    header img.logo{
+        width: 100px;
+        height: 30px;
+    }
+    input{
+        width: 100%;
+        border-bottom: 3px solid rgba(0, 0, 0, .6) ;
+        /* padding-left: 20px; */
+    }
+    label{
+        border-bottom: 3px solid rgba(0, 0, 0, .6) ;
+        /* padding-right: 20px; */
+    }
+
+    /* Menu déroulant devient Barre de navigation */
+    div.toggle{
+        visibility: hidden;
+    }
+    .menuNavigation{
+        visibility: visible;
+        
+        background-color: #FF6347;
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+    .menuNavigation .menu{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .menuNavigation .menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .menuNavigation .menu ul li{
+        list-style-type: none;
+        font-size: 10px;
+        width: 20%;
+        text-align: center;
+    }
+    .menuNavigation .menu ul li a i{
+        color: #fff;
+        padding: 10px;
+    }
+
+    .pagination-boite{
+        padding: 10px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    section.CMN{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+    .boite-communication,
+    .boite-marketing,
+    .boite-QSN{
+        margin: 0 15px;
+        flex-direction: column;
+    }
+
+    /*  */
+
+    div.illustrationart{
+        height: auto;
+        background-position: top;
+        height: 200px;
+    }
+
+    /* main */
+    main{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .titreDatepost h2,
+    .resume p{
+        margin: 0 20px;
+        
+    }
+    .conteneurMembre{
+        flex-direction: row;
+        width: 700px;
+        margin: 0px auto;
+        padding-bottom: 40px;
+        top: 40px;
+        justify-content: space-evenly;
+    }
+    div.pictureMemberTeam-card{
+        margin: 0 15px;
+        width: 200px;
+        height: 300px;
+        
+    }
+
+
+
+
+
+    
+
+}
+
+/*  */
+@media only screen and (min-width:1300px){
+    header,
+    main, div.illusationmenup, div.toggle, h1.titreSection, 
+    section.CMN, section.team, section.partenaire, section.laisserUnSMS,
+    footer.piedDePage,
+    section.positionementEtProjetWeb,
+
+    /* Debut Page Artcles */
+    section.coneteneurToutArticle,
+    div.sources,
+    div.listesAutresArticles
+    {
+        margin: 0 auto;
+        width: 1300px;
+    }
+    header{
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.illustrationart{
+        /* height: 300px; */
+        width: 50%;
+    }
+    h1.titreSection{
+        text-align: left;
+        padding-left: 15px;
+        font-weight: 600;
+        border-bottom: 3px solid rgba(0, 0, 0, .2);
+        font-size: 1em;
+    }
+    main{
+        border: none;
+    }
+
+    section.CMN{
+        margin-bottom: 30px;
+    }
+    section.team{
+        margin-bottom: 40px;
+        height: 500px;
+    }
+    .team::before{
+        transform: translateY(150px);
+    }
+    .conteneurMembre{
+        flex-direction: row;
+        width: 700px;
+        margin: 0px auto;
+        padding-bottom: 40px;
+        top: 40px;
+    }
+    div.pictureMemberTeam-card{
+        margin: 0 15px;
+        width: 300px;
+        height: 300px;
+        
+    }
+
+    .member1,.member2,.member3{
+        width: 80%;
+        height: 200px;
+        background-size: cover; 
+    }
+
+    /*  */
+    .conteneurBoiteBoutonSlide{
+        position: relative;
+        /* z-index: 20; */
+        top: 10px;
+    }
+    .boiteBoutonSlide{
+        width: 30%;
+    }
+    
+    /*  */
+
+    section.laisserUnSMS{
+        width: 900px;
+        height: 400px;
+        border: none;
+        margin-bottom: 130px;
+    }
+    .message{
+        height: 300px;
+        font-size: 1.2em;
+    }
+    .email{
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+    }
+    .envoi{
+        padding: 10px 20px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    /*  */
+
+    footer.piedDePage{
+      border: none;
+      background-color: white;   
+    }
+    section.garderLeLienAvecCritic{
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    section.LiensAvecCritic{
+        margin: 10px;
+        transform: translateY(0);
+        border: none;
+    }
+    div.positionnement{
+        margin-top: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    img.logopositionement{
+        margin: 10px;
+        width: 10%;
+    }
+    p.position{
+        padding-bottom: 0;
+    }
+    select#langue{
+        transform: translateX(400px);
+    }
+
+    /* Projets */
+
+    div.boite-projetWeb{
+        display: flex;
+        justify-content: space-between;
+    }
+    div.boiteProjet{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        padding: 10px 20px;
+    }
+
+}
+
+
+
+
+/* DEBUT CSS PAGE ARTICLES */
+
+
+section.coneteneurToutArticle{
+    /* width: 380px; */
+    margin: 0 auto;
+    padding: 15px;
+}
+div.illustrationDeArticle{
+    /* width: 80%; */
+    height: 300px;
+    background-image: url('images/illustrationsarticles/illustrationIA22.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+h1.titreArtex{
+    font-size: 4em;
+    font-weight: 300;
+    padding: 20px 30px;
+    line-height: 100px;
+}
+.paragraphe,
+div.sources{
+    width: 80%;
+    margin: 0 auto;
+}
+.DateDePublication,
+.auteur{
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 0px 70px;
+    font-size: 0.8em;
+}
+h4.signature{
+    color: #000;
+    margin-top: 30px;
+    text-align: right;
+}
+span{
+    font-style: normal;
+}
+
+div.sources ul li {
+    list-style-type:decimal;
+    font-size: 0.8em;
+    width: 90%;
+    margin: 0 auto;
+}
+    /* autres articles */
+    div.listesAutresArticles{
+        margin: 30px auto;
+    }
+    .boite-listesAutresArticles{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .articleposition{
+        width: 30%;
+        height: 195px;
+        /* padding: 5px; */
+        margin: 5px;
+        background-image: url('images/illustrationsarticles/illustrationIA22.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        
+    }
+    .textetitreautreArticles{
+        width: 100%;
+        background-color: #FF6347;
+        padding: 5px;
+    }
+    .articleposition a{
+        color: #fff;
+        /* background-color: #FF6347; */
+        
+    }
+    .boutonVoirPlusArticles{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        color: #282828;
+        border: none;
+        padding: 5px;
+    }
+    button a{
+        color: #282828;
+        margin: 20px 20px;
+    }
